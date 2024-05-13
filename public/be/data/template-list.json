@@ -1,0 +1,114 @@
+{
+  "listItems": [
+    {
+      "name": "Appointment",
+      "url": "/appointments",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "Billing",
+      "url": "/billing",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "Enquiry",
+      "url": "/registration/enquire",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "Settings",
+      "url": "/settings",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "Registration",
+      "url": "/registration/search",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "Finance",
+      "url": "/finance",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "Triage",
+      "url": "/outpatient/triage.queue",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "Nurses Bay",
+      "url": "/outpatient/nurses-bay",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "Procedures",
+      "url": "/outpatient/procedures.queue",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "Cashier",
+      "url": "/billing/cashier",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "Workbench",
+      "url": "/outpatient/doctors-workbenchl",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "Pharmacy",
+      "url": "/pharmacy",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "Inventory",
+      "url": "/inventory",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "OT",
+      "url": "/outpatient/operation-theatre",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "A&E",
+      "url": "/outpatient/accident-and-emergency",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "OPD",
+      "url": "/outpatient/doctor.queue",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "Physio",
+      "url": "/outpatient/physiotherapy",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "Specialities",
+      "url": "/outpatient/special-clinic",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "Drugs",
+      "url": "/inventory/drugs",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "Blood Bank",
+      "url": "/blood-bank",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "Reports",
+      "url": "/reports",
+      "icon": "feather icon-smartphone"
+    },
+    {
+      "name": "Non-Pharma",
+      "url": "/inventory/non-pharma",
+      "icon": "feather icon-smartphone"
+    }
+  ]
+}
