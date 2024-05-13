@@ -49,7 +49,7 @@ Route::post('/clear-session', [App\Http\Controllers\AccountController::class, 'c
 
 
 
-Route::get('/job/{id}', [App\Http\Controllers\AccountController::class, 'getJobById']);
+//Route::get('/job/{id}', [App\Http\Controllers\AccountController::class, 'getJobById']);
 
 
 
