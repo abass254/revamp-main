@@ -7,7 +7,7 @@
 <script src="be/vendors/js/tables/datatable/buttons.print.min.js"></script>
 <script src="be/vendors/js/tables/datatable/buttons.bootstrap.min.js"></script>
 <script src="be/vendors/js/tables/datatable/datatables.bootstrap4.min.js"></script>
-<script src="be/js/services-list.js"></script>
+<script src="be/js/events-list.js"></script>
 
 
 <link rel="stylesheet" type="text/css" href="be/vendors/css/tables/datatable/datatables.min.css">
@@ -37,34 +37,46 @@
                             <div class="table-responsive">
                                 <table id="queue-table" class="table data-list">
                                     <thead>
+                                    <!-- 'ev_title', 'ev_code', 'ev_type', 'ev_start', 'ev_end', 'ev_date', 'ev_venue', 'ev_banner', 'ev_desc', 'ev_status', 'ev_presenter', 'ev_gender', 'ev_photo' -->
                                         <tr>
                                             <th>#</th>
-                                            <th>#</i></th>
+                                            <th></i></th>
                                             <th>TITLE</th>
-                                            <th>DESCRIPTION</th>
-                                            <th>EXTENSION</th>
+                                            <th>BANNER</th>
+                                            <th>TYPE</th>
+                                            <th>VENUE</th>
+                                            <th>EVENT LINK</th>
+                                            <th>DATE</th>
+                                            <th>START TIME</th>
+                                            <th>END TIME</th>
+                                            <th>PRESENTED BY</th>
+                                            <th>GENDER(FOR ICON)</th>
                                             <th>STATUS</th>
                                             <th>ACTION</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach($services as $sv)
+                                        @for($i = 1; $i < 5; $i++)
                                             <tr>
-                                                <td>{{ $sv->id }}</td>
-                                                <td><img src="be/images/avatar/avatar-male.jpg" height="32" width="32"></td>
-                                                <td><a href="/service/{{ $sv->url }}">{{ $sv->title }}</a> </td>
-                                                <td width="240px">{{ $sv->desc }}</td>
-                                                <td><span class="bullet bullet-sm bullet-{{ $sv->status == '1'  ? 'success' : 'secondary'}} "></span>{{ $sv->status == '1' ? 'Display' : 'Hide' }}</td>
-                                                <!-- <td>
-                                                    <span class="badge badge-pill badge-light-@(usr.Status.Id.Equals(1) ? "success" : (usr.Status.Id.Equals(2) ? "warning" : "danger"))">Active</span>
-                                                </td> -->
+                                                <td>EV-1999</td>
+                                                <td><a href="">TITLE</a></td>
+                                                <td><img src="{{ asset('assets/images/henry-event.jpeg') }}" height="50" width="50"></td>
+                                                <td>TYPE</td>
+                                                <td>EV-1999</td>
+                                                <td>EV-1999</td>
+                                                <td>EV-1999</td>
+                                                <td>EV-1999</td>
+                                                <td>EV-1999</td>
+                                                <td>EV-1999</td>
+                                                <td width="240px">DESC</td>
+                                                <td><span class="bullet bullet-sm bullet-success"></span>Hide</td>
                                                 <td>
-                                                    <a href="/users/edit?u=@(usr.Uuid)"> <i class="feather icon-edit-1 dark td-action"></i></a>
-                                                    <a href="/users/view?u=@(usr.Uuid)"> <i class="feather icon-airplay td-action"></i></a>
-                                                    <a class="pointer redirect-link" data-uuid="@(usr.Uuid)"> <i class="feather icon-x danger td-action"></i></a>
+                                                    <a href=""> <i class="feather icon-edit-1 dark td-action"></i></a>
+                                                    <a href=""> <i class="feather icon-airplay td-action"></i></a>
+                                                    <a class="pointer redirect-link" data-uuid=""> <i class="feather icon-x danger td-action"></i></a>
                                                 </td>
                                             </tr>
-                                        @endforeach
+                                        @endfor
                                     </tbody>
                                 </table>
                             </div>

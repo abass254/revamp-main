@@ -3,8 +3,39 @@
 
 <style>
     .reduced-height {
-        height: 70vh; /* Set to 50% of the viewport height */
-        background-color: lightgrey;
+        height: 80vh; /* Set to 50% of the viewport height */
+        filter: brightness(50%);
+        background-color: black;
+    }
+
+    .image-container {
+        position: relative;
+        display: inline-block; /* Adjust the container to the size of the image */
+    }
+
+    .image-container img {
+        display: block; /* Ensure there's no extra space below the image */
+    }
+
+    .image-container::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Adjust the color and transparency */
+        pointer-events: none; /* Allows interaction with elements beneath the overlay */
+    }
+
+    .text-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white; /* Ensure the text color contrasts with the overlay */
+        z-index: 1; /* Ensure the text is above the overlay */
+        pointer-events: auto; /* Allow interaction with the text */
     }
 </style>
 
@@ -89,7 +120,7 @@
                         <div class="container">
                             <div class="banner-two__content text-left">
                                
-                                <h1 data-animation="fadeInUp" data-delay=".5s" class="text-light">
+                                <h1 style="filter: brightness(1.75);" data-animation="fadeInUp" data-delay=".5s" class="text-light">
                                     Your Trusted Digital<span class="text-light" style="display:block">Partner</span>
                                 </h1>
                                 <p data-animation="fadeInUp" data-delay=".7s" class="mt-20">
@@ -533,7 +564,7 @@
                 <div class="section-header text-center mb-60">
                     <h2 class="wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">We are trusted by</h2>
                 </div>
-            <div class="brand-three-area bg-image pt-100 pb-100" data-background="assets/images/bg/case-three-bg.jpg" style="background-image: url(&quot;assets/images/bg/case-three-bg.jpg&quot;);">
+            <div class="brand-three-area bg-image pt-60 pb-60" data-background="assets/images/bg/case-three-bg.jpg" style="background-image: url(&quot;assets/images/bg/case-three-bg.jpg&quot;);">
                 <div class="brand-three__line1">
                     <img src="assets/images/shape/brand-three-line1.png" alt="shape">
                 </div>
@@ -550,11 +581,11 @@
                     <div class="swiper brand__slider swiper-initialized swiper-horizontal swiper-pointer-events">
                         <div class="swiper-wrapper" id="swiper-wrapper-7b61c6a1c0d44134" aria-live="off" style="transform: translate3d(-1920px, 0px, 0px); transition-duration: 0ms;"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 210px; margin-right: 30px;" role="group" aria-label="1 / 5">
                                 <div class="brand__image image">
-                                    <img src="assets/images/brand/brand-image1.png" alt="image">
+                                    <img src="assets/images/clients/bpr_uganda.jpg" alt="image">
                                 </div>
                             </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" style="width: 210px; margin-right: 30px;" role="group" aria-label="2 / 5">
                                 <div class="brand__image image">
-                                    <img src="assets/images/brand/brand-image2.png" alt="image">
+                                    <img src="assets/images/brand/bpr_uganda.jpg" alt="image">
                                 </div>
                             </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev" data-swiper-slide-index="2" style="width: 210px; margin-right: 30px;" role="group" aria-label="3 / 5">
                                 <div class="brand__image image">
@@ -571,52 +602,32 @@
                             </div>
                             <div class="swiper-slide" data-swiper-slide-index="0" style="width: 210px; margin-right: 30px;" role="group" aria-label="1 / 5">
                                 <div class="brand__image image">
-                                    <img src="assets/images/brand/brand-image1.png" alt="image">
+                                    <img src="assets/images/clients/cop.jpg" alt="image">
                                 </div>
                             </div>
                             <div class="swiper-slide" data-swiper-slide-index="1" style="width: 210px; margin-right: 30px;" role="group" aria-label="2 / 5">
                                 <div class="brand__image image">
-                                    <img src="assets/images/brand/brand-image2.png" alt="image">
+                                    <img src="assets/images/clients/equity.png" alt="image">
                                 </div>
                             </div>
                             <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2" style="width: 210px; margin-right: 30px;" role="group" aria-label="3 / 5">
                                 <div class="brand__image image">
-                                    <img src="assets/images/brand/brand-image3.png" alt="image">
+                                    <img src="assets/images/clients/Kengen.png" alt="image">
                                 </div>
                             </div>
                             <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="3" style="width: 210px; margin-right: 30px;" role="group" aria-label="4 / 5">
                                 <div class="brand__image image">
-                                    <img src="assets/images/brand/brand-image4.png" alt="image">
+                                    <img src="assets/images/clients/konza.png" alt="image">
                                 </div>
                             </div>
                             <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="4" style="width: 210px; margin-right: 30px;" role="group" aria-label="5 / 5">
                                 <div class="brand__image image">
-                                    <img src="assets/images/brand/brand-image5.png" alt="image">
+                                    <img src="assets/images/clients/bpr_uganda.jpg" alt="image">
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                            <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="4" style="width: 210px; margin-right: 30px;" role="group" aria-label="5 / 5">
                                 <div class="brand__image image">
-                                    <img src="assets/images/clients/icta.png" alt="image">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="brand__image image">
-                                    <img src="assets/images/clients/mrm.png" alt="image">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="brand__image image">
-                                    <img src="assets/images/clients/equity.png" alt="image">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="brand__image image">
-                                    <img src="assets/images/clients/safaricom.svg" alt="image">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="brand__image image">
-                                    <img src="assets/images/clients/nrb.svg" alt="image">
+                                    <img src="assets/images/clients/kcb_ke.png" alt="image">
                                 </div>
                             </div>
                         <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 210px; margin-right: 30px;" role="group" aria-label="1 / 5">
@@ -640,7 +651,8 @@
                                     <img src="assets/images/brand/brand-image5.png" alt="image">
                                 </div>
                             </div></div>
-                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                        <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -648,7 +660,7 @@
         <!-- End Client’s Section -->
 
         <!-- Team area start here -->
-        <section class="team-area pt-120 pb-120">
+        <!-- <section class="team-area pt-120 pb-120">
             <div class="container">
                 <div class="section-header text-center mb-60">
                     <h5 class="wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
@@ -737,11 +749,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Team area end here -->
 
         <!-- Faq area start here -->
-        <section class="faq-area sub-bg pt-120 pb-120">
+        <!-- <section class="faq-area sub-bg pt-120 pb-120">
             <div class="faq__shape">
                 <img class="sway__animationX" src="assets/images/shape/faq-shape.png" alt="shape">
             </div>
@@ -862,7 +874,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Faq area end here -->
 
         <!-- Case area start here -->
@@ -1109,9 +1121,9 @@
                     <div class="col-lg-6 wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1500ms">
                         <div class="blog-two__grid-item">
                             <a href="blog-details.html" class="blog__image d-block image">
-                                <img src="assets/images/blog/blog-two-grid-image1.jpg" alt="image">
+                                <img src="assets/images/henry-event.jpeg" alt="image">
                                 <div class="blog-tag">
-                                    <h3 class="text-white">10</h3>
+                                    <h3 class="text-white">123</h3>
                                     <span class="text-white">Dec</span>
                                 </div>
                             </a>
@@ -1159,21 +1171,16 @@
                                         <a href="#0">0 Comments</a>
                                     </li>
                                 </ul>
-                                <h3><a href="blog-details.html" class="primary-hover">Keep Your Business Safe & Ensure
-                                        High
-                                        Availability.</a></h3>
-                                <p class="mt-10">Consequat Quisque eget congue velit in OF cursus leo sodales IS the
-                                    euismod quis
-                                    sapien euismod</p>
+                                <h3><a href="#" onClick="preventDefault()" class="primary-hover">Why Identity Is The Foundation of Zero Trust</a></h3>
                                 <div class="about__info justify-content-between flex-wrap gap-3 mt-25">
                                     <div class="d-flex gap-2 align-items-center">
                                         <img src="assets/images/blog/admin1.png" alt="image">
                                         <div class="info">
-                                            <a href="#0" class="primary-color">By Admin</a>
-                                            <h5>Alex Rony</h5>
+                                            <a href="#0" class="primary-color">General Manager - Cybersecurity Security</a>
+                                            <h5>Henry Karanja</h5>
                                         </div>
                                     </div>
-                                    <a href="blog-details-2.html" class="btn-one">Read More <i
+                                    <a href="blog-details-2.html" class="btn-one">Join Webinar<i
                                             class="fa-regular fa-arrow-right-long"></i></a>
                                 </div>
                             </div>
@@ -1183,7 +1190,7 @@
                         <div class="blog-two__list-item mb-30 wow fadeInUp" data-wow-delay="00ms"
                             data-wow-duration="1500ms">
                             <a href="blog-details.html" class="blog__image d-block image">
-                                <img src="assets/images/blog/blog-two-list-image1.jpg" alt="image">
+                                <img src="assets/images/henry-event.jpeg" alt="image">
                                 <div class="blog-tag">
                                     <h3 class="text-white">15</h3>
                                     <span class="text-white">Dec</span>
@@ -1205,7 +1212,7 @@
                                                 </clipPath>
                                             </defs>
                                         </svg>
-                                        <a href="#0">Technology</a>
+                                        <a href="#0">Zero Trust Series</a>
                                     </li>
                                     <li>
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"

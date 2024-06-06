@@ -4090,7 +4090,7 @@ input.main-search-input::placeholder {
   transform: rotateY(360deg);
 }
 .offer__item:hover .offer__icon svg path {
-  fill: #fff;
+  fill: #f8f6f6;
 }
 
 .brand__wrp {
@@ -4382,7 +4382,7 @@ input.main-search-input::placeholder {
   position: absolute;
   top: 15px;
   left: 15px;
-  background: var(--gradient-bg);
+  background: #A40606;
   padding: 10px 22px;
 }
 .blog__image .blog-tag h3 {

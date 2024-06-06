@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revamp</title>
+    <title>Konvengenz Network Solutions</title>
     <!-- Favicon img -->
     <link rel="shortcut icon" href="https://konvergenz.co.ke/wp-content/uploads/2021/04/cropped-Konvergenz-Icon-01-32x32.png">
     <!-- Bootstarp min css -->

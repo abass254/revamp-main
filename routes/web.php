@@ -43,6 +43,13 @@ Route::get('/update-job-details/{id}', [App\Http\Controllers\PostController::cla
 Route::put('/update_job_status/{id}', [App\Http\Controllers\PostController::class, 'updateStatus']);
 
 
+Route::get('/manage-comments', [App\Http\Controllers\ContactController::class, 'contacts']);
+Route::post('/add-contact', [App\Http\Controllers\ContactController::class, 'addContact'])->name('add-contact');
+
+
+Route::get('/manage-events', [App\Http\Controllers\EventController::class, 'events']);
+
+
 
 Route::post('/custom_login', [App\Http\Controllers\AccountController::class, 'customLogin']);
 Route::post('/clear-session', [App\Http\Controllers\AccountController::class, 'clearSession']);
